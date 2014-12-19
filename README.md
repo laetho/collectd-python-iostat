@@ -14,7 +14,7 @@ The state of the plugin can be considered proof-of-concept. The code works for m
 
 
 Setup
--------
+-----
 Deploy the collectd python plugin into a suitable plugin directory for your collectd instance.
 
 Configure collectd's python plugin to execute the iostat plugin using a stanza similar to the following:
@@ -39,6 +39,11 @@ Once functioning, the iostat data should then be visible via your various output
 
 In the case of Graphite, collectd should be writing data to graphite in the *hostname_domain_tld.iostat.DEVICE.gauge.column-name* style.
 
+
+Technical notes
+---------------
+
+For parsing iostat output I'm using [jakamkon's](https://bitbucket.org/jakamkon) [python-iostat](https://bitbucket.org/jakamkon/python-iostat) python module, but as internal part of script instead of separate module because of couple of fixes.
 
 
 Contact
