@@ -37,7 +37,7 @@ Configure collectd's python plugin to execute the iostat plugin using a stanza s
 
 Once functioning, the iostat data should then be visible via your various output plugins.
 
-In the case of Graphite, collectd should be writing data to graphite in the *hostname_domain_tld.iostat.DEVICE.gauge.column-name* style namespaceles have been included for reference to assist in setting this up, see the _rewrite-rules.conf_ file for more information.
+In the case of Graphite, collectd should be writing data to graphite in the *hostname_domain_tld.iostat.DEVICE.gauge.column-name* style.
 
 
 
